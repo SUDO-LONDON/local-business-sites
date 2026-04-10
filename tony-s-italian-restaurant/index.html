@@ -1,0 +1,191 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tony's Italian Restaurant - Wickford</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-['Open_Sans'] bg-white text-gray-900">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-[#8B0000] text-white shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="font-['Playfair_Display'] text-2xl font-bold">Tony's</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link hover:text-[#FFD700] transition">Home</a>
+          <a href="menu.html" class="nav-link hover:text-[#FFD700] transition">Menu</a>
+          <a href="about.html" class="nav-link hover:text-[#FFD700] transition">About</a>
+          <a href="contact.html" class="nav-link hover:text-[#FFD700] transition">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative w-full h-screen flex items-center justify-center overflow-hidden pt-16">
+    <img src="images/hero.jpg" class="hero-img w-full h-full object-cover absolute inset-0" alt="Tony's Italian Restaurant" loading="eager">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="hero-content relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-3xl">
+      <h1 class="font-['Playfair_Display'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+        Welcome to Tony's Italian Restaurant
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-100 mb-8">
+        Experience authentic Italian cuisine made with love, using traditional family recipes in the heart of Wickford
+      </p>
+      <a href="contact.html" class="inline-block bg-[#FFD700] text-[#8B0000] px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition transform hover:scale-105">
+        Book Your Table
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Services Section -->
+    <section class="animate-section py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-[#8B0000] mb-12">
+          Our Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Dine-in Card -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+            <div class="h-48 bg-gradient-to-br from-[#8B0000] to-[#5C0000] flex items-center justify-center">
+              <svg class="w-24 h-24 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+              </svg>
+            </div>
+            <div class="p-8">
+              <h3 class="font-['Playfair_Display'] text-2xl font-bold text-[#8B0000] mb-3">Dine-in Dining</h3>
+              <p class="text-gray-700">Enjoy an authentic Italian atmosphere with warm hospitality. Experience our traditional recipes in a welcoming family-friendly environment.</p>
+            </div>
+          </div>
+
+          <!-- Takeaway Card -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+            <div class="h-48 bg-gradient-to-br from-[#228B22] to-[#155D15] flex items-center justify-center">
+              <svg class="w-24 h-24 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div class="p-8">
+              <h3 class="font-['Playfair_Display'] text-2xl font-bold text-[#228B22] mb-3">Takeaway Orders</h3>
+              <p class="text-gray-700">Craving our delicious Italian dishes at home? Order fresh pasta, wood-fired pizzas and classics for convenient takeaway service.</p>
+            </div>
+          </div>
+
+          <!-- Private Events Card -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+            <div class="h-48 bg-gradient-to-br from-[#FFD700] to-[#FFA500] flex items-center justify-center">
+              <svg class="w-24 h-24 text-[#8B0000]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+              </svg>
+            </div>
+            <div class="p-8">
+              <h3 class="font-['Playfair_Display'] text-2xl font-bold text-[#8B0000] mb-3">Private Party Bookings</h3>
+              <p class="text-gray-700">Celebrate with us! Perfect for birthdays, anniversaries, and special occasions. Our team ensures memorable Italian gatherings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Image Section -->
+    <section class="animate-section py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#8B0000] mb-6">
+              Authentic Italian Excellence
+            </h2>
+            <p class="text-gray-700 text-lg mb-4">
+              Tony's Italian Restaurant brings generations of family recipes from Italy to your table. Since opening on Wickford's High Street, we've been dedicated to serving genuine Italian cuisine prepared with the finest ingredients.
+            </p>
+            <p class="text-gray-700 text-lg mb-8">
+              From hand-rolled pasta to wood-fired pizzas, every dish tells a story of tradition, passion, and authentic Italian hospitality. We're not just serving food; we're sharing our family's heritage with you.
+            </p>
+            <a href="about.html" class="inline-block bg-[#8B0000] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#5C0000] transition">
+              Learn Our Story
+            </a>
+          </div>
+          <div>
+            <img src="images/section.jpg" class="w-full h-64 object-cover rounded-lg shadow-lg" alt="restaurant" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="animate-section py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-[#8B0000] text-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+          Ready for an Authentic Italian Experience?
+        </h2>
+        <p class="text-lg sm:text-xl mb-8 text-gray-100">
+          52 High St, Wickford SS12 9AT, United Kingdom
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="contact.html" class="inline-block bg-[#FFD700] text-[#8B0000] px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition">
+            Book a Table
+          </a>
+          <a href="menu.html" class="inline-block bg-white text-[#8B0000] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
+            View Our Menu
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="font-['Playfair_Display'] text-2xl font-bold text-[#FFD700] mb-4">Tony's Italian Restaurant</h3>
+          <p class="text-gray-400">Authentic Italian flavours in the heart of Wickford</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Visit Us</h4>
+          <p class="text-gray-400">52 High St<br>Wickford SS12 9AT<br>United Kingdom</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="index.html" class="hover:text-[#FFD700] transition">Home</a></li>
+            <li><a href="menu.html" class="hover:text-[#FFD700] transition">Menu</a></li>
+            <li><a href="about.html" class="hover:text-[#FFD700] transition">About</a></li>
+            <li><a href="contact.html" class="hover:text-[#FFD700] transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 Tony's Italian Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+    gsap.from(".hero-img", { opacity: 0, duration: 1.2, ease: "power1.out" });
+    gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+    gsap.utils.toArray(".animate-section").forEach(el => {
+      gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+    });
+  </script>
+</body>
+</html>
+```
