@@ -1,0 +1,342 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Jimbo's Home Kitchen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#FAF8F3] text-[#2C2C2C] font-['Open_Sans']">
+
+  <!-- Navigation -->
+  <nav class="bg-[#8B4513] shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0">
+          <a href="index.html" class="text-[#F4E4BC] font-['Playfair_Display'] text-2xl font-bold">Jimbo's</a>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link text-[#F4E4BC] hover:text-white transition">Home</a>
+          <a href="menu.html" class="nav-link text-[#F4E4BC] hover:text-white transition">Menu</a>
+          <a href="about.html" class="nav-link text-[#F4E4BC] hover:text-white transition">About</a>
+          <a href="contact.html" class="nav-link text-[#F4E4BC] hover:text-white transition">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button class="text-[#F4E4BC] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-[#8B4513] to-[#6B3410] py-12 sm:py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="hero-content text-center">
+        <h1 class="font-['Playfair_Display'] text-4xl sm:text-5xl md:text-6xl font-bold text-[#F4E4BC] mb-4">Our Menu</h1>
+        <p class="text-lg sm:text-xl text-[#E8D4B0] max-w-2xl mx-auto">Discover our selection of home-cooked favorites, crafted with fresh ingredients and family recipes passed down through generations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Menu Content -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+
+    <!-- Appetizers Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8 border-b-4 border-[#D2691E] pb-4">Appetizers</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Appetizer 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Homemade Soup of the Day</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£4.95</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm mb-3">Warm, comforting seasonal soup made fresh daily with love and the finest ingredients.</p>
+          <span class="inline-block bg-[#F4E4BC] text-[#8B4513] text-xs px-3 py-1 rounded-full">Vegetarian</span>
+        </div>
+
+        <!-- Appetizer 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Crispy Fish Bites</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£6.50</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm mb-3">Golden-fried bite-sized pieces of fresh fish served with tartar sauce and lemon.</p>
+        </div>
+
+        <!-- Appetizer 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Herb Bread & Butter</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£3.50</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm mb-3">Warm, freshly baked bread brushed with garlic herb butter. Perfect starter to any meal.</p>
+          <span class="inline-block bg-[#F4E4BC] text-[#8B4513] text-xs px-3 py-1 rounded-full">Vegetarian</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mains Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8 border-b-4 border-[#D2691E] pb-4">Main Courses</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Main 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Grandma's Beef Stew</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£12.95</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm mb-3">Tender chunks of beef slow-cooked with root vegetables, herbs, and rich gravy. A true comfort classic.</p>
+        </div>
+
+        <!-- Main 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Pan-Seared Salmon</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£14.50</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm mb-3">Fresh Atlantic salmon fillet with asparagus, new potatoes, and lemon dill sauce.</p>
+        </div>
+
+        <!-- Main 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Herb Roasted Chicken</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£13.25</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm mb-3">Succulent half chicken rubbed with Provençal herbs, served with roasted vegetables and gravy.</p>
+        </div>
+
+        <!-- Main 4 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Vegetable Lasagne</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£10.95</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm mb-3">Layers of fresh pasta, roasted vegetables, béchamel, and melted cheese. Hearty and satisfying.</p>
+          <span class="inline-block bg-[#F4E4BC] text-[#8B4513] text-xs px-3 py-1 rounded-full">Vegetarian</span>
+        </div>
+
+        <!-- Main 5 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Homemade Cottage Pie</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£11.50</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm mb-3">Seasoned beef and vegetable filling topped with creamy mashed potatoes and baked until golden.</p>
+        </div>
+
+        <!-- Main 6 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Pork Chops with Apple</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£13.75</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm mb-3">Thick-cut pork chops with a tangy apple and cider sauce, served with seasonal vegetables.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sides Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8 border-b-4 border-[#D2691E] pb-4">Sides & Vegetables</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Side 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Creamy Mashed Potatoes</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£2.95</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Buttery, smooth mashed potatoes with a hint of garlic.</p>
+          <span class="inline-block bg-[#F4E4BC] text-[#8B4513] text-xs px-3 py-1 rounded-full mt-3">Vegetarian</span>
+        </div>
+
+        <!-- Side 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Roasted Root Vegetables</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£3.25</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Seasonal vegetables roasted with olive oil and herbs until tender.</p>
+          <span class="inline-block bg-[#F4E4BC] text-[#8B4513] text-xs px-3 py-1 rounded-full mt-3">Vegetarian</span>
+        </div>
+
+        <!-- Side 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Steamed Greens</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£2.50</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Fresh seasonal greens steamed to perfection, lightly buttered.</p>
+          <span class="inline-block bg-[#F4E4BC] text-[#8B4513] text-xs px-3 py-1 rounded-full mt-3">Vegetarian</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8 border-b-4 border-[#D2691E] pb-4">Desserts</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Dessert 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Apple Crumble</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£5.50</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Warm baked apples topped with a buttery oat crumble. Served with custard or ice cream.</p>
+          <span class="inline-block bg-[#F4E4BC] text-[#8B4513] text-xs px-3 py-1 rounded-full mt-3">Vegetarian</span>
+        </div>
+
+        <!-- Dessert 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Chocolate Pudding</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£4.95</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Rich, decadent chocolate pudding with a molten centre. Indulgence in every spoonful.</p>
+          <span class="inline-block bg-[#F4E4BC] text-[#8B4513] text-xs px-3 py-1 rounded-full mt-3">Vegetarian</span>
+        </div>
+
+        <!-- Dessert 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Strawberry Shortcake</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£5.75</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Light sponge with fresh strawberries and whipped cream. A classic favorite.</p>
+          <span class="inline-block bg-[#F4E4BC] text-[#8B4513] text-xs px-3 py-1 rounded-full mt-3">Vegetarian</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Beverages Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8 border-b-4 border-[#D2691E] pb-4">Beverages</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Beverage 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Freshly Brewed Tea</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£2.25</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">A selection of premium loose-leaf teas. Perfect with any meal.</p>
+        </div>
+
+        <!-- Beverage 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Fresh Lemonade</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£2.50</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Homemade lemonade made fresh daily with real lemons.</p>
+        </div>
+
+        <!-- Beverage 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Hot Chocolate</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£3.00</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Rich, creamy hot chocolate topped with whipped cream and marshmallows.</p>
+        </div>
+
+        <!-- Beverage 4 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Iced Tea</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£2.50</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Refreshing iced tea served with lemon. Available in multiple flavors.</p>
+        </div>
+
+        <!-- Beverage 5 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">Soft Drinks</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£2.00</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Selection of popular soft drinks and fizzy beverages.</p>
+        </div>
+
+        <!-- Beverage 6 -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513]">House Wine</h3>
+            <span class="text-[#D2691E] font-bold text-lg">£5.50</span>
+          </div>
+          <p class="text-[#5C5C5C] text-sm">Curated house wines available by the glass. Ask our staff for recommendations.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Special Note -->
+    <section class="animate-section bg-[#F4E4BC] rounded-lg p-8 sm:p-12 text-center border-l-4 border-[#D2691E]">
+      <h3 class="font-['Playfair_Display'] text-2xl sm:text-3xl font-bold text-[#8B4513] mb-4">Daily Specials</h3>
+      <p class="text-[#5C5C5C] text-lg max-w-2xl mx-auto">Ask your server about our daily specials! Each day brings fresh surprises prepared with the same love and care that goes into all our dishes. Jimbo's proudly features locally-sourced ingredients whenever possible.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#8B4513] text-[#F4E4BC] py-12 sm:py-16 mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="font-['Playfair_Display'] text-lg font-bold mb-4">Jimbo's Home Kitchen</h4>
+          <p class="text-[#E8D4B0] text-sm">Comfort food made with love, right here in Wickford.</p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-[#E8D4B0] hover:text-white transition">Home</a></li>
+            <li><a href="menu.html" class="text-[#E8D4B0] hover:text-white transition">Menu</a></li>
+            <li><a href="about.html" class="text-[#E8D4B0] hover:text-white transition">About</a></li>
+            <li><a href="contact.html" class="text-[#E8D4B0] hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Location</h4>
+          <p class="text-[#E8D4B0] text-sm">1, Wickford<br>SS12 9AJ<br>United Kingdom</p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Hours</h4>
+          <p class="text-[#E8D4B0] text-sm">Mon - Thu: 11am - 9pm<br>Fri - Sat: 11am - 10pm<br>Sunday: 12pm - 8pm</p>
+        </div>
+      </div>
+      <div class="border-t border-[#D2691E] pt-8 text-center">
+        <p class="text-[#E8D4B0] text-sm">&copy; 2024 Jimbo's Home Kitchen. All rights reserved. | Comfort Food Made with Love</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+    gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+    gsap.utils.toArray(".animate-section").forEach(el => {
+      gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+    });
+  </script>
+
+</body>
+</html>
+```
