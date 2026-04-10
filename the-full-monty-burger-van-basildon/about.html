@@ -1,0 +1,166 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - The Full Monty Burger Van Basildon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Open_Sans'] text-[#212121]">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full top-0 z-50 bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="font-['Bebas_Neue'] text-2xl sm:text-3xl font-bold text-[#D32F2F]">
+          THE FULL MONTY
+        </div>
+        <ul class="flex gap-4 sm:gap-8">
+          <li><a href="index.html" class="nav-link text-sm sm:text-base hover:text-[#D32F2F] transition">HOME</a></li>
+          <li><a href="menu.html" class="nav-link text-sm sm:text-base hover:text-[#D32F2F] transition">MENU</a></li>
+          <li><a href="about.html" class="nav-link text-sm sm:text-base hover:text-[#D32F2F] transition">ABOUT</a></li>
+          <li><a href="contact.html" class="nav-link text-sm sm:text-base hover:text-[#D32F2F] transition">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative w-full h-96 sm:h-[500px] lg:h-[600px] mt-16 sm:mt-20 overflow-hidden">
+    <img src="images/hero.jpg" class="hero-img w-full h-full object-cover" alt="The Full Monty Burger Van Basildon" loading="eager">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="hero-content text-center px-4">
+        <h1 class="font-['Bebas_Neue'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">ABOUT US</h1>
+        <p class="text-lg sm:text-xl text-[#FFC107]">The Full Experience, Every Bite</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="w-full">
+    
+    <!-- About Section -->
+    <section class="animate-section py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div>
+            <h2 class="font-['Bebas_Neue'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#D32F2F] mb-6">About The Full Monty Burger Van Basildon</h2>
+            <p class="text-base sm:text-lg leading-relaxed text-[#212121] mb-6">Started with a simple mission - serve the biggest, tastiest burgers in Basildon without any shortcuts. Our mobile kitchen brings you fresh, made-to-order food with generous portions that never leave you wanting more. We're not just about burgers; we're about giving you the full experience every single time.</p>
+            <p class="text-base sm:text-lg leading-relaxed text-[#212121]">Located on Paycocke Rd, we're your go-to destination for gourmet comfort food that doesn't compromise on quality or quantity. Every burger is crafted with care, every portion is generous, and every visit is memorable.</p>
+          </div>
+          <div>
+            <img src="images/about.jpg" class="w-full h-80 object-cover rounded-lg shadow-lg" alt="About The Full Monty Burger Van Basildon" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Values Section -->
+    <section class="animate-section py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#F5F5F5]">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-['Bebas_Neue'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#D32F2F] mb-12 text-center">Our Mission & Values</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="text-4xl text-[#FFC107] mb-4">🍔</div>
+            <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#D32F2F] mb-4">Quality First</h3>
+            <p class="text-[#212121]">We use only the freshest ingredients and never take shortcuts. Every burger is made to order with passion and precision.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="text-4xl text-[#FFC107] mb-4">📏</div>
+            <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#D32F2F] mb-4">Generous Portions</h3>
+            <p class="text-[#212121]">The Full Monty means you get everything. Our massive portions ensure you leave satisfied every single time.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="text-4xl text-[#FFC107] mb-4">😊</div>
+            <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#D32F2F] mb-4">Community Focused</h3>
+            <p class="text-[#212121]">We're part of Basildon's food scene. Friendly service and bold flavors are what make us your favorite burger van.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="animate-section py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="font-['Bebas_Neue'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#D32F2F] mb-8">Why Choose The Full Monty?</h2>
+        <div class="space-y-6 text-base sm:text-lg leading-relaxed text-[#212121]">
+          <p>We started because we believed Basildon deserved better street food. Better ingredients. Better portions. Better experience.</p>
+          <p>From our mobile kitchen on Paycocke Rd, we're committed to delivering gourmet burgers, loaded fries, and street food that satisfies. No frozen patties. No skimpy portions. No compromises.</p>
+          <p class="text-[#D32F2F] font-bold">Every burger tells a story. Make sure your next meal is one you'll remember.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="animate-section py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#F5F5F5]">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-['Bebas_Neue'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#D32F2F] mb-12 text-center">What We Offer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-[#D32F2F] text-white p-8 rounded-lg shadow-md">
+            <h3 class="font-['Bebas_Neue'] text-2xl font-bold mb-4">Gourmet Burgers</h3>
+            <p>Handcrafted burgers with premium beef, fresh toppings, and bold flavors that make your taste buds sing.</p>
+          </div>
+          <div class="bg-[#D32F2F] text-white p-8 rounded-lg shadow-md">
+            <h3 class="font-['Bebas_Neue'] text-2xl font-bold mb-4">Loaded Fries</h3>
+            <p>Golden, crispy fries stacked high with toppings that transform a simple side into a full meal experience.</p>
+          </div>
+          <div class="bg-[#D32F2F] text-white p-8 rounded-lg shadow-md">
+            <h3 class="font-['Bebas_Neue'] text-2xl font-bold mb-4">Street Food Catering</h3>
+            <p>Bring The Full Monty experience to your event. We cater to parties, corporate events, and gatherings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#212121] text-white py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="font-['Bebas_Neue'] text-xl font-bold text-[#FFC107] mb-4">THE FULL MONTY</h3>
+          <p class="text-sm text-gray-300">Serving the biggest, tastiest burgers in Basildon.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-[#FFC107] mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray-300 hover:text-[#FFC107] transition">Home</a></li>
+            <li><a href="menu.html" class="text-gray-300 hover:text-[#FFC107] transition">Menu</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-[#FFC107] transition">About</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-[#FFC107] transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-[#FFC107] mb-4">Location</h4>
+          <p class="text-sm text-gray-300">Paycocke Rd<br>Basildon SS14 3DP<br>United Kingdom</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-[#FFC107] mb-4">Follow Us</h4>
+          <p class="text-sm text-gray-300">Find us on social media for updates, specials, and burger inspiration.</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8">
+        <p class="text-center text-sm text-gray-400">&copy; 2024 The Full Monty Burger Van Basildon. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+    gsap.from(".hero-img", { opacity: 0, duration: 1.2, ease: "power1.out" });
+    gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+    gsap.utils.toArray(".animate-section").forEach(el => {
+      gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+    });
+  </script>
+
+</body>
+</html>
+```
