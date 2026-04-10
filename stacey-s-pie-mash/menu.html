@@ -1,0 +1,317 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Stacey's Pie & Mash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#FAF7F2] text-[#2C2C2C] font-['Source_Sans_Pro']">
+    
+    <!-- Navigation -->
+    <nav class="bg-[#8B4513] text-[#F5E6D3] shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="font-['Playfair_Display'] font-bold text-xl sm:text-2xl">Stacey's Pie & Mash</h1>
+                </div>
+                <div class="hidden md:flex gap-8">
+                    <a href="index.html" class="nav-link hover:text-[#228B22] transition">Home</a>
+                    <a href="menu.html" class="nav-link hover:text-[#228B22] transition">Menu</a>
+                    <a href="about.html" class="nav-link hover:text-[#228B22] transition">About</a>
+                    <a href="contact.html" class="nav-link hover:text-[#228B22] transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-[#F5E6D3] hover:text-[#228B22]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-[#8B4513] to-[#A0522D] text-[#F5E6D3] py-12 sm:py-16 lg:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="hero-content">
+                <h1 class="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl lg:text-6xl mb-4">Our Menu</h1>
+                <p class="text-lg sm:text-xl max-w-2xl">Explore our selection of traditional British comfort food, crafted with authentic recipes and the finest ingredients.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        
+        <!-- Signature Pies Section -->
+        <section class="animate-section mb-16">
+            <h2 class="font-['Playfair_Display'] font-bold text-3xl sm:text-4xl text-[#8B4513] mb-2">Signature Pies</h2>
+            <div class="h-1 w-20 bg-[#228B22] mb-8"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Beef & Gravy</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£5.95</span>
+                    </div>
+                    <p class="text-[#666] mb-2">Tender chunks of British beef in rich, dark gravy, encased in our signature golden pastry.</p>
+                    <span class="inline-block bg-[#F5E6D3] text-[#8B4513] text-xs font-bold px-3 py-1 rounded">Comfort Food Classic</span>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Chicken & Mushroom</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£5.50</span>
+                    </div>
+                    <p class="text-[#666] mb-2">Succulent chicken breast with earthy mushrooms and creamy sauce, baked in buttery pastry.</p>
+                    <span class="inline-block bg-[#F5E6D3] text-[#8B4513] text-xs font-bold px-3 py-1 rounded">House Favourite</span>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Steak & Kidney</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£6.45</span>
+                    </div>
+                    <p class="text-[#666] mb-2">A traditional British classic with premium steak, tender kidney, and complex savoury gravy.</p>
+                    <span class="inline-block bg-[#F5E6D3] text-[#8B4513] text-xs font-bold px-3 py-1 rounded">Traditional</span>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Pork & Parsnip</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£5.75</span>
+                    </div>
+                    <p class="text-[#666] mb-2">Succulent pork with sweet roasted parsnips and herb-infused gravy in golden pastry.</p>
+                    <span class="inline-block bg-[#F5E6D3] text-[#8B4513] text-xs font-bold px-3 py-1 rounded">Seasonal Special</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Mash & Sides Section -->
+        <section class="animate-section mb-16">
+            <h2 class="font-['Playfair_Display'] font-bold text-3xl sm:text-4xl text-[#8B4513] mb-2">Mash & Sides</h2>
+            <div class="h-1 w-20 bg-[#228B22] mb-8"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Creamy Mash</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£2.50</span>
+                    </div>
+                    <p class="text-[#666]">Smooth, buttery mashed potatoes, the perfect complement to any pie.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Mushy Peas</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£2.00</span>
+                    </div>
+                    <p class="text-[#666]">Traditional split pea purée, seasoned to perfection with mint and butter.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Chips</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£2.25</span>
+                    </div>
+                    <p class="text-[#666]">Golden, crispy chips made from quality potatoes, fried to order.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Liquor Gravy</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£1.50</span>
+                    </div>
+                    <p class="text-[#666]">Classic parsley-infused gravy, served hot on the side or poured over your mash.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Jellied Eels & Traditional Dishes -->
+        <section class="animate-section mb-16">
+            <h2 class="font-['Playfair_Display'] font-bold text-3xl sm:text-4xl text-[#8B4513] mb-2">Jellied Eels & Specialities</h2>
+            <div class="h-1 w-20 bg-[#228B22] mb-8"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Jellied Eels</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£4.95</span>
+                    </div>
+                    <p class="text-[#666] mb-2">Traditional East End delicacy. Tender eels set in savoury aspic, a true taste of London heritage.</p>
+                    <span class="inline-block bg-[#F5E6D3] text-[#8B4513] text-xs font-bold px-3 py-1 rounded">Authentic Classic</span>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Pie, Mash & Liquor</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£8.50</span>
+                    </div>
+                    <p class="text-[#666] mb-2">The complete traditional experience: your choice of pie, creamy mash, and parsley liquor all together.</p>
+                    <span class="inline-block bg-[#F5E6D3] text-[#8B4513] text-xs font-bold px-3 py-1 rounded">Complete Meal</span>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Pie & Mash with Chips</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£7.95</span>
+                    </div>
+                    <p class="text-[#666] mb-2">A hearty combination of your favourite pie with both creamy mash and golden chips.</p>
+                    <span class="inline-block bg-[#F5E6D3] text-[#8B4513] text-xs font-bold px-3 py-1 rounded">Popular Choice</span>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Eels & Mash</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£7.50</span>
+                    </div>
+                    <p class="text-[#666]">Jellied eels served with creamy mash and parsley liquor, the traditional way.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Desserts Section -->
+        <section class="animate-section mb-16">
+            <h2 class="font-['Playfair_Display'] font-bold text-3xl sm:text-4xl text-[#8B4513] mb-2">Desserts</h2>
+            <div class="h-1 w-20 bg-[#228B22] mb-8"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Apple Pie</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£3.95</span>
+                    </div>
+                    <p class="text-[#666]">Homemade apple pie with cinnamon spice, served warm with a scoop of vanilla ice cream.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Sticky Toffee Pudding</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£4.50</span>
+                    </div>
+                    <p class="text-[#666]">Moist sponge pudding drenched in rich toffee sauce, served warm with custard.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Bread & Butter Pudding</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£3.75</span>
+                    </div>
+                    <p class="text-[#666]">Traditional baked pudding with sultanas and spices, served with warm custard cream.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Crumble & Custard</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£3.50</span>
+                    </div>
+                    <p class="text-[#666]">Seasonal fruit crumble with buttery oat topping, served piping hot with fresh custard.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Drinks Section -->
+        <section class="animate-section mb-16">
+            <h2 class="font-['Playfair_Display'] font-bold text-3xl sm:text-4xl text-[#8B4513] mb-2">Drinks</h2>
+            <div class="h-1 w-20 bg-[#228B22] mb-8"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Fresh Tea</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£2.00</span>
+                    </div>
+                    <p class="text-[#666]">Hot, traditional British tea, brewed to perfection in individual pots.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Coffee</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£2.25</span>
+                    </div>
+                    <p class="text-[#666]">Rich, aromatic coffee served hot or iced. Choose espresso, americano, or cappuccino.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Soft Drinks</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£1.75</span>
+                    </div>
+                    <p class="text-[#666]">Assorted chilled soft drinks, juices, and fizzy beverages available in regular sizes.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-['Playfair_Display'] font-bold text-2xl text-[#8B4513]">Water</h3>
+                        <span class="text-[#228B22] font-bold text-lg">£1.00</span>
+                    </div>
+                    <p class="text-[#666]">Chilled still or sparkling water, served with ice and a wedge of lemon.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Takeaway Info -->
+        <section class="animate-section bg-[#8B4513] text-[#F5E6D3] rounded-lg p-8 sm:p-12">
+            <h2 class="font-['Playfair_Display'] font-bold text-3xl sm:text-4xl mb-6">Takeaway Service Available</h2>
+            <p class="text-lg mb-6">All items on our menu are available for takeaway. Enjoy traditional British comfort food at home, perfectly packaged to keep your meal hot and fresh.</p>
+            <p class="text-lg">Visit us at <strong>221 Timberlog Ln, Basildon SS14 1PB</strong> or call ahead to place your order for quick collection.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C2C2C] text-[#F5E6D3] mt-16 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-['Playfair_Display'] font-bold text-2xl mb-4">Stacey's Pie & Mash</h3>
+                    <p class="text-[#CCC]">Traditional British Comfort Food Since Day One</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#228B22] transition">Home</a></li>
+                        <li><a href="menu.html" class="hover:text-[#228B22] transition">Menu</a></li>
+                        <li><a href="about.html" class="hover:text-[#228B22] transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-[#228B22] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Location</h4>
+                    <p class="text-[#CCC]">221 Timberlog Ln</p>
+                    <p class="text-[#CCC]">Basildon SS14 1PB</p>
+                    <p class="text-[#CCC]">United Kingdom</p>
+                </div>
+            </div>
+            <div class="border-t border-[#444] pt-8">
+                <p class="text-center text-[#999]">&copy; 2024 Stacey's Pie & Mash. All rights reserved. Authentic British comfort food since day one.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+        gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+        gsap.utils.toArray(".animate-section").forEach(el => {
+            gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+        });
+    </script>
+
+</body>
+</html>
+```
