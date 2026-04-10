@@ -1,0 +1,323 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Full Monty Burger Van Basildon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5F5F5] font-['Open_Sans']">
+    <!-- Navigation -->
+    <nav class="bg-[#212121] text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="font-['Bebas_Neue'] text-2xl font-bold text-[#FFC107]">THE FULL MONTY</div>
+            <div class="flex gap-6 md:gap-8">
+                <a href="index.html" class="nav-link hover:text-[#FFC107] transition-colors text-sm md:text-base">Home</a>
+                <a href="menu.html" class="nav-link hover:text-[#FFC107] transition-colors text-sm md:text-base font-bold text-[#FFC107]">Menu</a>
+                <a href="about.html" class="nav-link hover:text-[#FFC107] transition-colors text-sm md:text-base">About</a>
+                <a href="contact.html" class="nav-link hover:text-[#FFC107] transition-colors text-sm md:text-base">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-[#D32F2F] text-white py-12 md:py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="hero-content">
+                <h1 class="font-['Bebas_Neue'] text-4xl md:text-5xl font-bold mb-4">OUR MENU</h1>
+                <p class="text-lg md:text-xl text-[#FFC107]">Bold flavors, massive portions, the full experience</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Gourmet Burgers Section -->
+        <section class="animate-section mb-16">
+            <div class="mb-12">
+                <h2 class="font-['Bebas_Neue'] text-4xl font-bold text-[#212121] mb-2 pb-4 border-b-4 border-[#D32F2F] inline-block">GOURMET BURGERS</h2>
+                <p class="text-[#666] mt-4 mb-8">Hand-pressed patties, fresh toppings, and our signature sauces. Every burger comes with a generous serving of our loaded fries.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- The Full Monty -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">The Full Monty</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£12.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Double beef patty, crispy bacon, aged cheddar, caramelized onions, pickles, lettuce, tomato, and our signature red sauce on a toasted brioche bun.</p>
+                    <div class="flex gap-2">
+                        <span class="inline-block bg-[#FFC107] text-[#212121] text-xs font-bold px-2 py-1 rounded">BESTSELLER</span>
+                    </div>
+                </div>
+
+                <!-- The Classic -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">The Classic</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£9.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Single beef patty, American cheese, mustard, pickles, and crispy onions on a soft brioche bun. Simple, honest, and absolutely delicious.</p>
+                    <div class="flex gap-2">
+                        <span class="inline-block bg-[#FFC107] text-[#212121] text-xs font-bold px-2 py-1 rounded">POPULAR</span>
+                    </div>
+                </div>
+
+                <!-- The Stack Attack -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">The Stack Attack</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£14.99</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Triple beef patty, quadruple cheese, crispy bacon strips, fried egg, jalapeños, and house mayo. This is not for the faint-hearted.</p>
+                    <div class="flex gap-2">
+                        <span class="inline-block bg-[#D32F2F] text-white text-xs font-bold px-2 py-1 rounded">CHALLENGE</span>
+                    </div>
+                </div>
+
+                <!-- The Smoky BBQ -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">The Smoky BBQ</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£11.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Double beef patty, smoked bacon, crispy fried onions, cheddar, and our special BBQ sauce with a kick of chipotle. Smoky, sweet, and savory.</p>
+                </div>
+
+                <!-- The Mushroom Melt -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">The Mushroom Melt</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£10.99</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Single beef patty, sautéed mushrooms, gruyere cheese, crispy shallots, and truffle aioli. Rich, earthy, and absolutely indulgent.</p>
+                    <div class="flex gap-2">
+                        <span class="inline-block bg-[#212121] text-[#FFC107] text-xs font-bold px-2 py-1 rounded">VEG OPTION</span>
+                    </div>
+                </div>
+
+                <!-- The Spicy One -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">The Spicy One</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£11.00</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Double beef patty, pepper jack cheese, ghost pepper mayo, jalapeños, hot sauce drizzle, and fresh cilantro. Seriously hot stuff.</p>
+                    <div class="flex gap-2">
+                        <span class="inline-block bg-[#D32F2F] text-white text-xs font-bold px-2 py-1 rounded">🔥 SPICY</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loaded Fries & Sides Section -->
+        <section class="animate-section mb-16">
+            <div class="mb-12">
+                <h2 class="font-['Bebas_Neue'] text-4xl font-bold text-[#212121] mb-2 pb-4 border-b-4 border-[#D32F2F] inline-block">LOADED FRIES & SIDES</h2>
+                <p class="text-[#666] mt-4 mb-8">Golden, crispy fries piled high with our favorite toppings. Because sides should be anything but boring.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Classic Loaded Fries -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">Classic Loaded Fries</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£5.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Crispy fries topped with melted cheddar, crispy bacon bits, and our special house sauce. A meal in itself.</p>
+                </div>
+
+                <!-- Chili Cheese Fries -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">Chili Cheese Fries</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£6.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Fries smothered in beef chili, melted cheese, jalapeños, sour cream, and fresh cilantro. Hearty and satisfying.</p>
+                </div>
+
+                <!-- The Breakfast Fries -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">The Breakfast Fries</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£6.99</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Fries topped with scrambled eggs, crispy bacon, melted cheese, and a drizzle of maple syrup. Yes, maple syrup.</p>
+                </div>
+
+                <!-- Buffalo Chicken Fries -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">Buffalo Chicken Fries</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£7.00</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Fries topped with spicy buffalo chicken, blue cheese crumbles, and a cooling ranch drizzle. Hot, tangy, and addictive.</p>
+                </div>
+
+                <!-- Truffle & Parmesan Fries -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">Truffle & Parmesan Fries</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£5.99</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Golden fries tossed with truffle oil, fresh parmesan, garlic, and fresh parsley. Elegant comfort food at its finest.</p>
+                </div>
+
+                <!-- Onion Rings -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">Onion Rings</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£4.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm mb-3">Hand-battered, golden-fried onion rings served with our house sauce. Crispy outside, tender inside.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks Section -->
+        <section class="animate-section mb-16">
+            <div class="mb-12">
+                <h2 class="font-['Bebas_Neue'] text-4xl font-bold text-[#212121] mb-2 pb-4 border-b-4 border-[#D32F2F] inline-block">DRINKS</h2>
+                <p class="text-[#666] mt-4 mb-8">Wash down your meal with our selection of cold and refreshing beverages.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Soft Drinks -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-xl font-bold text-[#212121]">Soft Drinks</h3>
+                        <span class="text-[#D32F2F] font-bold">£2.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm">Cola, Lemonade, Orange, Fanta, Sprite, and more. Cold and refreshing.</p>
+                </div>
+
+                <!-- Bottled Water -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-xl font-bold text-[#212121]">Bottled Water</h3>
+                        <span class="text-[#D32F2F] font-bold">£1.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm">Still or sparkling. Hydrate in style.</p>
+                </div>
+
+                <!-- Iced Tea -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-xl font-bold text-[#212121]">Iced Tea</h3>
+                        <span class="text-[#D32F2F] font-bold">£3.00</span>
+                    </div>
+                    <p class="text-[#666] text-sm">Refreshing brewed iced tea. Perfect pairing with any burger.</p>
+                </div>
+
+                <!-- Milkshakes -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-xl font-bold text-[#212121]">Milkshakes</h3>
+                        <span class="text-[#D32F2F] font-bold">£4.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm">Vanilla, Chocolate, Strawberry, or Salted Caramel. Thick and creamy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desserts Section -->
+        <section class="animate-section mb-16">
+            <div class="mb-12">
+                <h2 class="font-['Bebas_Neue'] text-4xl font-bold text-[#212121] mb-2 pb-4 border-b-4 border-[#D32F2F] inline-block">DESSERTS</h2>
+                <p class="text-[#666] mt-4 mb-8">Don't forget to save room for something sweet to finish your meal.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Loaded Brownies -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">Loaded Brownies</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£4.99</span>
+                    </div>
+                    <p class="text-[#666] text-sm">Warm, fudgy chocolate brownie with chocolate chips, caramel drizzle, and sea salt. Pure indulgence.</p>
+                </div>
+
+                <!-- Deep Fried Oreos -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">Deep Fried Oreos</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£3.99</span>
+                    </div>
+                    <p class="text-[#666] text-sm">Golden-fried Oreos served warm with a sweet dipping sauce. A fair favorite.</p>
+                </div>
+
+                <!-- Apple Pie & Ice Cream -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">Apple Pie & Ice Cream</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£5.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm">Warm homemade apple pie with a scoop of vanilla ice cream. Classic comfort on a plate.</p>
+                </div>
+
+                <!-- Chocolate Chip Cookie -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-['Bebas_Neue'] text-2xl font-bold text-[#212121]">Chocolate Chip Cookie</h3>
+                        <span class="text-[#D32F2F] font-bold text-lg">£3.50</span>
+                    </div>
+                    <p class="text-[#666] text-sm">Warm, soft-baked chocolate chip cookie with a generous helping of melted chocolate. Perfect with a cold drink.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catering Section -->
+        <section class="animate-section mb-16 bg-[#D32F2F] text-white rounded-lg p-8 md:p-12">
+            <h2 class="font-['Bebas_Neue'] text-4xl font-bold mb-4">STREET FOOD CATERING</h2>
+            <p class="text-lg mb-6">Looking for something special? We offer catering for events, parties, and gatherings. Whether it's 10 people or 100, we'll bring The Full Monty experience to you.</p>
+            <p class="text-base mb-6">Our mobile kitchen can be customized with your favorite menu items, and we'll handle all the setup and serving.</p>
+            <a href="contact.html" class="inline-block bg-[#FFC107] text-[#212121] font-bold px-8 py-3 rounded-lg hover:bg-white transition-colors">GET A CATERING QUOTE</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#212121] text-white py-8 mt-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-['Bebas_Neue'] text-xl font-bold text-[#FFC107] mb-4">THE FULL MONTY</h3>
+                    <p class="text-[#999]">Serving up generous, no-nonsense burgers and hearty comfort food from our mobile kitchen in Basildon.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">QUICK LINKS</h3>
+                    <ul class="space-y-2 text-[#999]">
+                        <li><a href="index.html" class="hover:text-[#FFC107] transition-colors">Home</a></li>
+                        <li><a href="menu.html" class="hover:text-[#FFC107] transition-colors">Menu</a></li>
+                        <li><a href="about.html" class="hover:text-[#FFC107] transition-colors">About</a></li>
+                        <li><a href="contact.html" class="hover:text-[#FFC107] transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">LOCATION</h3>
+                    <p class="text-[#999]">Paycocke Rd<br>Basildon SS14 3DP<br>United Kingdom</p>
+                </div>
+            </div>
+            <div class="border-t border-[#444] pt-8 text-center text-[#999]">
+                <p>&copy; 2024 The Full Monty Burger Van Basildon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+        gsap.from(".hero-img", { opacity: 0, duration: 1.2, ease: "power1.out" });
+        gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+        gsap.utils.toArray(".animate-section").forEach(el => {
+            gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+        });
+    </script>
+</body>
+</html>
+```
