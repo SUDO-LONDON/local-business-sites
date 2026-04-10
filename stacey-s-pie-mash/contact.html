@@ -1,0 +1,147 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Stacey's Pie & Mash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5E6D3] text-[#333]">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-[#8B4513] shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="font-['Playfair_Display'] text-2xl font-bold text-[#F5E6D3]">Stacey's Pie & Mash</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link text-[#F5E6D3] hover:text-[#228B22] transition">Home</a>
+          <a href="menu.html" class="nav-link text-[#F5E6D3] hover:text-[#228B22] transition">Menu</a>
+          <a href="about.html" class="nav-link text-[#F5E6D3] hover:text-[#228B22] transition">About</a>
+          <a href="contact.html" class="nav-link text-[#F5E6D3] hover:text-[#228B22] transition font-semibold">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button class="text-[#F5E6D3] hover:text-[#228B22]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-[#8B4513] py-16 sm:py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="hero-content text-center">
+        <h1 class="font-['Playfair_Display'] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#F5E6D3] mb-4">Get in Touch</h1>
+        <p class="text-lg sm:text-xl text-[#F5E6D3] opacity-90">We'd love to hear from you. Reach out with any questions or feedback.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+      <!-- Contact Form -->
+      <div class="lg:col-span-2 animate-section">
+        <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8">Send us a Message</h2>
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-semibold text-[#8B4513] mb-2">Your Name</label>
+            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border-2 border-[#8B4513] rounded-lg focus:outline-none focus:border-[#228B22] bg-white text-[#333]" placeholder="John Smith">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-semibold text-[#8B4513] mb-2">Your Email</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border-2 border-[#8B4513] rounded-lg focus:outline-none focus:border-[#228B22] bg-white text-[#333]" placeholder="john@example.com">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-semibold text-[#8B4513] mb-2">Message</label>
+            <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 border-2 border-[#8B4513] rounded-lg focus:outline-none focus:border-[#228B22] bg-white text-[#333] resize-none" placeholder="Tell us what's on your mind..."></textarea>
+          </div>
+          <button type="submit" class="w-full sm:w-auto bg-[#228B22] hover:bg-[#1a6b1a] text-[#F5E6D3] font-semibold py-3 px-8 rounded-lg transition duration-300">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="animate-section">
+        <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8">Contact Information</h2>
+        
+        <div class="space-y-8">
+          <!-- Address -->
+          <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#228B22]">
+            <h3 class="font-semibold text-[#8B4513] text-lg mb-2">Address</h3>
+            <p class="text-[#333]">221 Timberlog Ln<br>Basildon SS14 1PB<br>United Kingdom</p>
+          </div>
+
+          <!-- Hours -->
+          <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#228B22]">
+            <h3 class="font-semibold text-[#8B4513] text-lg mb-3">Business Hours</h3>
+            <ul class="space-y-2 text-[#333]">
+              <li><span class="font-semibold">Monday - Friday:</span> 9:00 AM - 5:00 PM</li>
+              <li><span class="font-semibold">Saturday:</span> 10:00 AM - 4:00 PM</li>
+              <li><span class="font-semibold">Sunday:</span> Closed</li>
+            </ul>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#228B22]">
+            <h3 class="font-semibold text-[#8B4513] text-lg mb-3">Find Us</h3>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+              <p class="text-gray-600 text-center">Map location: 221 Timberlog Ln, Basildon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#8B4513] text-[#F5E6D3] py-12 sm:py-16 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="font-['Playfair_Display'] text-xl font-bold mb-4">Stacey's Pie & Mash</h3>
+          <p class="text-sm opacity-90">Traditional British Comfort Food Since Day One</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-[#228B22] transition">Home</a></li>
+            <li><a href="menu.html" class="hover:text-[#228B22] transition">Menu</a></li>
+            <li><a href="about.html" class="hover:text-[#228B22] transition">About</a></li>
+            <li><a href="contact.html" class="hover:text-[#228B22] transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Location</h4>
+          <p class="text-sm">221 Timberlog Ln<br>Basildon SS14 1PB<br>United Kingdom</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Hours</h4>
+          <p class="text-sm">Mon-Fri: 9AM-5PM<br>Sat: 10AM-4PM<br>Sun: Closed</p>
+        </div>
+      </div>
+      <div class="border-t border-[#F5E6D3] border-opacity-20 pt-8">
+        <p class="text-center text-sm opacity-75">&copy; 2024 Stacey's Pie & Mash. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP and ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+    gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+    gsap.utils.toArray(".animate-section").forEach(el => {
+      gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+    });
+  </script>
+</body>
+</html>
+```
