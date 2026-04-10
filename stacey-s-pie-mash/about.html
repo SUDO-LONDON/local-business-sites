@@ -1,0 +1,186 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Stacey's Pie & Mash</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5E6D3] text-[#2D2D2D] font-['Source_Sans_Pro']">
+    <!-- Header & Navigation -->
+    <header class="bg-[#8B4513] text-[#F5E6D3] sticky top-0 z-50 shadow-lg">
+        <nav class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+            <div class="font-['Playfair_Display'] text-2xl md:text-3xl font-bold">
+                <a href="index.html" class="hover:text-[#228B22] transition-colors">Stacey's Pie & Mash</a>
+            </div>
+            <ul class="flex gap-4 md:gap-8 text-sm md:text-base">
+                <li><a href="index.html" class="nav-link hover:text-[#228B22] transition-colors">Home</a></li>
+                <li><a href="menu.html" class="nav-link hover:text-[#228B22] transition-colors">Menu</a></li>
+                <li><a href="about.html" class="nav-link hover:text-[#228B22] transition-colors">About</a></li>
+                <li><a href="contact.html" class="nav-link hover:text-[#228B22] transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-96 md:h-[500px] bg-gradient-to-r from-[#8B4513] to-[#6B3410] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="images/hero.jpg" class="hero-img w-full h-full object-cover opacity-60" alt="Stacey's Pie & Mash" loading="eager">
+            </div>
+            <div class="hero-content relative z-10 text-center text-[#F5E6D3] px-4">
+                <h1 class="font-['Playfair_Display'] text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Our Story</h1>
+                <p class="text-lg md:text-xl">Traditional British Comfort Food Since Day One</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="animate-section bg-[#F5E6D3] py-12 md:py-20 px-4">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-3xl md:text-4xl font-bold text-[#8B4513] mb-6">About Stacey's Pie & Mash</h2>
+                    <p class="text-base md:text-lg text-[#2D2D2D] leading-relaxed mb-6">
+                        Stacey's Pie & Mash has been serving the Basildon community with traditional British comfort food that brings families together. Our authentic recipes and commitment to quality ingredients ensure every plate delivers the hearty, satisfying flavors you remember and love.
+                    </p>
+                    <p class="text-base md:text-lg text-[#2D2D2D] leading-relaxed">
+                        From our signature pies to our time-honored preparation methods, we honor the traditions that made British pie and mash a beloved staple for generations.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/about.jpg" class="w-full h-80 object-cover rounded-lg shadow-lg" alt="About Stacey's Pie & Mash" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values Section -->
+        <section class="animate-section bg-[#8B4513] text-[#F5E6D3] py-12 md:py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-['Playfair_Display'] text-3xl md:text-4xl font-bold mb-12 text-center">Our Mission & Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#6B3410] p-8 rounded-lg shadow-lg">
+                        <h3 class="font-['Playfair_Display'] text-2xl font-bold mb-4 text-[#228B22]">Authenticity</h3>
+                        <p class="leading-relaxed">
+                            We stay true to traditional British recipes passed down through generations, using time-honored methods and quality ingredients.
+                        </p>
+                    </div>
+                    <div class="bg-[#6B3410] p-8 rounded-lg shadow-lg">
+                        <h3 class="font-['Playfair_Display'] text-2xl font-bold mb-4 text-[#228B22]">Community</h3>
+                        <p class="leading-relaxed">
+                            Stacey's is more than a restaurant—it's a gathering place where families and friends come together to share meals and memories.
+                        </p>
+                    </div>
+                    <div class="bg-[#6B3410] p-8 rounded-lg shadow-lg">
+                        <h3 class="font-['Playfair_Display'] text-2xl font-bold mb-4 text-[#228B22]">Quality</h3>
+                        <p class="leading-relaxed">
+                            Every ingredient matters. We source the finest quality products to ensure our food tastes as good as it should.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section class="animate-section bg-[#F5E6D3] py-12 md:py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-['Playfair_Display'] text-3xl md:text-4xl font-bold text-[#8B4513] mb-12 text-center">What We Offer</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-[#228B22]">
+                        <h3 class="font-['Playfair_Display'] text-2xl font-bold text-[#8B4513] mb-4">Traditional Pie & Mash</h3>
+                        <p class="text-[#2D2D2D] leading-relaxed">
+                            Our signature dish, prepared with slow-cooked meat and mash, served with rich gravy the traditional British way.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-[#228B22]">
+                        <h3 class="font-['Playfair_Display'] text-2xl font-bold text-[#8B4513] mb-4">Jellied Eels</h3>
+                        <p class="text-[#2D2D2D] leading-relaxed">
+                            A classic East End delicacy prepared with care and authenticity, bringing back the flavors of old London.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-[#228B22]">
+                        <h3 class="font-['Playfair_Display'] text-2xl font-bold text-[#8B4513] mb-4">Takeaway Service</h3>
+                        <p class="text-[#2D2D2D] leading-relaxed">
+                            Take our comfort food home with you. Fresh, hot, and ready to enjoy with your loved ones anytime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="animate-section bg-[#F5E6D3] py-12 md:py-20 px-4 border-t border-[#8B4513]">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-['Playfair_Display'] text-3xl md:text-4xl font-bold text-[#8B4513] mb-12 text-center">Behind the Counter</h2>
+                <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 text-center">
+                    <h3 class="font-['Playfair_Display'] text-2xl md:text-3xl font-bold text-[#8B4513] mb-4">Led by Tradition & Passion</h3>
+                    <p class="text-base md:text-lg text-[#2D2D2D] leading-relaxed max-w-2xl mx-auto">
+                        Our team is dedicated to keeping the traditions of British pie and mash alive. Every member shares a passion for quality food and genuine hospitality. We take pride in serving Basildon with the care and authenticity that makes Stacey's a beloved local institution.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="animate-section bg-[#228B22] text-[#F5E6D3] py-12 md:py-16 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="font-['Playfair_Display'] text-2xl md:text-3xl font-bold mb-6">Experience Traditional British Comfort</h2>
+                <p class="text-base md:text-lg mb-8 max-w-2xl mx-auto">
+                    Visit us today at 221 Timberlog Ln, Basildon SS14 1PB and discover why Stacey's Pie & Mash is a Basildon favorite.
+                </p>
+                <a href="contact.html" class="inline-block bg-[#8B4513] text-[#F5E6D3] px-8 py-3 rounded-lg font-semibold hover:bg-[#6B3410] transition-colors">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#8B4513] text-[#F5E6D3] py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-['Playfair_Display'] text-xl font-bold mb-4">Stacey's Pie & Mash</h3>
+                    <p class="text-sm leading-relaxed">
+                        Traditional British comfort food since day one.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="index.html" class="hover:text-[#228B22] transition-colors">Home</a></li>
+                        <li><a href="menu.html" class="hover:text-[#228B22] transition-colors">Menu</a></li>
+                        <li><a href="about.html" class="hover:text-[#228B22] transition-colors">About</a></li>
+                        <li><a href="contact.html" class="hover:text-[#228B22] transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Location</h4>
+                    <p class="text-sm leading-relaxed">
+                        221 Timberlog Ln<br>
+                        Basildon SS14 1PB<br>
+                        United Kingdom
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-[#6B3410] pt-8 text-center text-sm">
+                <p>&copy; 2024 Stacey's Pie & Mash. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+        gsap.from(".hero-img", { opacity: 0, duration: 1.2, ease: "power1.out" });
+        gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+        gsap.utils.toArray(".animate-section").forEach(el => {
+            gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+        });
+    </script>
+</body>
+</html>
+```
