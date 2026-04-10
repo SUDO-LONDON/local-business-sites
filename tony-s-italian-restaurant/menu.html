@@ -1,0 +1,404 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Tony's Italian Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white font-['Open_Sans']">
+  <!-- Navigation -->
+  <nav class="bg-[#8B0000] text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="font-['Playfair_Display'] text-2xl sm:text-3xl font-bold">Tony's</a>
+        <div class="flex gap-4 sm:gap-8">
+          <a href="index.html" class="nav-link hover:text-[#FFD700] transition">Home</a>
+          <a href="menu.html" class="nav-link hover:text-[#FFD700] transition border-b-2 border-[#FFD700]">Menu</a>
+          <a href="about.html" class="nav-link hover:text-[#FFD700] transition">About</a>
+          <a href="contact.html" class="nav-link hover:text-[#FFD700] transition">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-[#8B0000] to-[#6B0000] text-white py-12 sm:py-16 lg:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="hero-content text-center">
+        <h1 class="font-['Playfair_Display'] text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">Our Menu</h1>
+        <p class="text-lg sm:text-xl text-gray-100">Authentic Italian flavours in the heart of Wickford</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <!-- Appetizers Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B0000] mb-8">Appetizers</h2>
+      <div class="grid gap-8">
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Bruschetta al Pomodoro</h3>
+            <span class="text-[#228B22] font-bold text-lg">£6.50</span>
+          </div>
+          <p class="text-gray-600">Toasted ciabatta with fresh tomatoes, garlic, basil, and extra virgin olive oil</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Calamari Fritti</h3>
+            <span class="text-[#228B22] font-bold text-lg">£8.95</span>
+          </div>
+          <p class="text-gray-600">Tender squid rings lightly battered and fried until golden, served with lemon aioli</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Arancini Siciliani</h3>
+            <span class="text-[#228B22] font-bold text-lg">£7.50</span>
+          </div>
+          <p class="text-gray-600">Crispy golden risotto balls filled with ragù, peas, and mozzarella <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Caprese Salad</h3>
+            <span class="text-[#228B22] font-bold text-lg">£7.95</span>
+          </div>
+          <p class="text-gray-600">Fresh mozzarella, ripe tomatoes, and basil dressed with balsamic glaze and olive oil <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Garlic Bread</h3>
+            <span class="text-[#228B22] font-bold text-lg">£4.50</span>
+          </div>
+          <p class="text-gray-600">Crispy ciabatta infused with roasted garlic and fresh parsley <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pasta Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B0000] mb-8">Pasta & Risotto</h2>
+      <div class="grid gap-8">
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Spaghetti Carbonara</h3>
+            <span class="text-[#228B22] font-bold text-lg">£11.50</span>
+          </div>
+          <p class="text-gray-600">Silky pasta with pancetta, egg yolk, Parmesan, and cracked black pepper in a creamy sauce</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Lasagna della Nonna</h3>
+            <span class="text-[#228B22] font-bold text-lg">£12.95</span>
+          </div>
+          <p class="text-gray-600">Traditional layered pasta with slow-cooked beef ragù, béchamel, and melted mozzarella</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Penne all'Arrabbiata</h3>
+            <span class="text-[#228B22] font-bold text-lg">£10.50</span>
+          </div>
+          <p class="text-gray-600">Penne tossed with spicy tomato sauce, garlic, and fresh chilli <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Fettuccine Alfredo</h3>
+            <span class="text-[#228B22] font-bold text-lg">£11.00</span>
+          </div>
+          <p class="text-gray-600">Ribbon pasta coated in a rich, creamy Parmesan sauce with a hint of nutmeg <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Risotto ai Funghi</h3>
+            <span class="text-[#228B22] font-bold text-lg">£12.50</span>
+          </div>
+          <p class="text-gray-600">Creamy risotto with mixed mushrooms, white wine, and Parmesan <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Tagliatelle al Ragù Bolognese</h3>
+            <span class="text-[#228B22] font-bold text-lg">£13.00</span>
+          </div>
+          <p class="text-gray-600">Wide ribbon pasta with our signature slow-cooked beef and tomato sauce, garnished with Parmesan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pizza Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B0000] mb-8">Wood-Fired Pizzas</h2>
+      <div class="grid gap-8">
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Margherita</h3>
+            <span class="text-[#228B22] font-bold text-lg">£10.00</span>
+          </div>
+          <p class="text-gray-600">Classic pizza with fresh mozzarella, tomato sauce, and fresh basil <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Quattro Formaggi</h3>
+            <span class="text-[#228B22] font-bold text-lg">£12.50</span>
+          </div>
+          <p class="text-gray-600">Four cheese pizza with mozzarella, gorgonzola, ricotta, and Parmesan <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Prosciutto e Rucola</h3>
+            <span class="text-[#228B22] font-bold text-lg">£13.00</span>
+          </div>
+          <p class="text-gray-600">Tomato sauce, mozzarella, prosciutto, and fresh rocket with a drizzle of olive oil</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Diavola</h3>
+            <span class="text-[#228B22] font-bold text-lg">£12.00</span>
+          </div>
+          <p class="text-gray-600">Spicy pizza with tomato sauce, mozzarella, pepperoni, and fresh chilli</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Funghi e Truffle</h3>
+            <span class="text-[#228B22] font-bold text-lg">£14.50</span>
+          </div>
+          <p class="text-gray-600">Creamy base with mixed mushrooms, mozzarella, and a drizzle of truffle oil <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Carnivore's Delight</h3>
+            <span class="text-[#228B22] font-bold text-lg">£14.00</span>
+          </div>
+          <p class="text-gray-600">Tomato sauce, mozzarella, pepperoni, sausage, bacon, and ham</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Courses Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B0000] mb-8">Main Courses</h2>
+      <div class="grid gap-8">
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Osso Buco alla Milanese</h3>
+            <span class="text-[#228B22] font-bold text-lg">£18.95</span>
+          </div>
+          <p class="text-gray-600">Slow-braised veal shank in white wine and tomato, served with risotto and gremolata</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Chicken Parmigiana</h3>
+            <span class="text-[#228B22] font-bold text-lg">£14.50</span>
+          </div>
+          <p class="text-gray-600">Breaded chicken breast topped with tomato sauce and melted mozzarella, served with pasta</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Branzino al Forno</h3>
+            <span class="text-[#228B22] font-bold text-lg">£16.50</span>
+          </div>
+          <p class="text-gray-600">Whole sea bass roasted with lemon, herbs, and olive oil, served with seasonal vegetables</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Saltimbocca alla Romana</h3>
+            <span class="text-[#228B22] font-bold text-lg">£15.95</span>
+          </div>
+          <p class="text-gray-600">Thin veal slices wrapped in prosciutto and sage, pan-fried and served with white wine sauce</p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Eggplant Parmigiana</h3>
+            <span class="text-[#228B22] font-bold text-lg">£12.00</span>
+          </div>
+          <p class="text-gray-600">Layers of breaded eggplant, tomato sauce, and melted cheese, baked until golden <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B0000] mb-8">Desserts</h2>
+      <div class="grid gap-8">
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Tiramisu</h3>
+            <span class="text-[#228B22] font-bold text-lg">£6.50</span>
+          </div>
+          <p class="text-gray-600">Classic Italian dessert with mascarpone, espresso, and cocoa powder <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Panna Cotta</h3>
+            <span class="text-[#228B22] font-bold text-lg">£6.00</span>
+          </div>
+          <p class="text-gray-600">Silky smooth cream dessert served with fresh berries and berry coulis <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Cannoli Siciliani</h3>
+            <span class="text-[#228B22] font-bold text-lg">£5.95</span>
+          </div>
+          <p class="text-gray-600">Crispy pastry tubes filled with sweet ricotta cream and candied fruit <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Zabaglione</h3>
+            <span class="text-[#228B22] font-bold text-lg">£6.00</span>
+          </div>
+          <p class="text-gray-600">Warm Italian custard made with egg yolks, sugar, and Marsala wine <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Chocolate Lava Cake</h3>
+            <span class="text-[#228B22] font-bold text-lg">£6.50</span>
+          </div>
+          <p class="text-gray-600">Rich chocolate cake with a molten centre, served with vanilla ice cream <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+
+        <div class="border-b-2 border-gray-200 pb-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg sm:text-xl text-gray-900">Gelato Selection</h3>
+            <span class="text-[#228B22] font-bold text-lg">£5.00</span>
+          </div>
+          <p class="text-gray-600">Choose from pistachio, hazelnut, chocolate, or fruit flavours <span class="text-sm bg-[#228B22] text-white px-2 py-1 rounded">Vegetarian</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beverages Section -->
+    <section class="animate-section mb-16">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B0000] mb-8">Beverages</h2>
+      <div class="grid gap-8">
+        <div>
+          <h3 class="font-bold text-xl text-gray-900 mb-4">Wine Selection</h3>
+          <div class="space-y-4">
+            <div class="border-b-2 border-gray-200 pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-semibold text-gray-900">House Red (Glass / Bottle)</span>
+                <span class="text-[#228B22] font-bold">£5.50 / £22.00</span>
+              </div>
+              <p class="text-sm text-gray-600">Italian Chianti, smooth and fruity</p>
+            </div>
+
+            <div class="border-b-2 border-gray-200 pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-semibold text-gray-900">House White (Glass / Bottle)</span>
+                <span class="text-[#228B22] font-bold">£5.00 / £19.50</span>
+              </div>
+              <p class="text-sm text-gray-600">Italian Pinot Grigio, crisp and refreshing</p>
+            </div>
+
+            <div class="border-b-2 border-gray-200 pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-semibold text-gray-900">Prosecco (Glass / Bottle)</span>
+                <span class="text-[#228B22] font-bold">£6.00 / £28.00</span>
+              </div>
+              <p class="text-sm text-gray-600">Sparkling Italian wine, light and celebratory</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-xl text-gray-900 mb-4">Soft Drinks & Other</h3>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center border-b-2 border-gray-200 pb-3">
+              <span class="text-gray-900">Sparkling Water / Still Water</span>
+              <span class="text-[#228B22] font-bold">£2.50 / £2.00</span>
+            </div>
+            <div class="flex justify-between items-center border-b-2 border-gray-200 pb-3">
+              <span class="text-gray-900">Italian Sodas (Aranciata, Chinotto)</span>
+              <span class="text-[#228B22] font-bold">£3.00</span>
+            </div>
+            <div class="flex justify-between items-center border-b-2 border-gray-200 pb-3">
+              <span class="text-gray-900">Fresh Orange Juice</span>
+              <span class="text-[#228B22] font-bold">£3.50</span>
+            </div>
+            <div class="flex justify-between items-center border-b-2 border-gray-200 pb-3">
+              <span class="text-gray-900">Espresso / Cappuccino / Latte</span>
+              <span class="text-[#228B22] font-bold">£2.50 / £3.00 / £3.00</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-900">Digestif (Limoncello, Amaretto)</span>
+              <span class="text-[#228B22] font-bold">£3.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="animate-section bg-[#8B0000] text-white rounded-lg p-8 sm:p-12 text-center">
+      <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold mb-4">Ready to Dine with Us?</h2>
+      <p class="text-lg mb-6">Visit us at 52 High St, Wickford SS12 9AT, or call us to book a table or place a takeaway order.</p>
+      <a href="contact.html" class="inline-block bg-[#FFD700] text-[#8B0000] font-bold px-8 py-3 rounded-lg hover:bg-[#FFC700] transition">Get in Touch</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#2a2a2a] text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="font-['Playfair_Display'] text-xl font-bold text-white mb-4">Tony's Italian Restaurant</h3>
+          <p class="text-sm">Authentic Italian flavours in the heart of Wickford</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-[#FFD700] transition">Home</a></li>
+            <li><a href="menu.html" class="hover:text-[#FFD700] transition">Menu</a></li>
+            <li><a href="about.html" class="hover:text-[#FFD700] transition">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-[#FFD700] transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Location</h4>
+          <p class="text-sm">52 High St, Wickford SS12 9AT, United Kingdom</p>
+          <p class="text-sm mt-2">Dine-in • Takeaway • Private Bookings</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-600 pt-8 text-center text-sm">
+        <p>&copy; 2024 Tony's Italian Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+    gsap.from(".hero-img", { opacity: 0, duration: 1.2, ease: "power1.out" });
+    gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+    gsap.utils.toArray(".animate-section").forEach(el => {
+      gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+    });
+  </script>
+</body>
+</html>
+```
