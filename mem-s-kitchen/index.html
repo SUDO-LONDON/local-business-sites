@@ -1,0 +1,168 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mem's Kitchen - Homemade Flavors, Heartfelt Service</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-[#8B4513] text-[#F5E6D3] sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold font-['Playfair_Display']">Mem's Kitchen</div>
+      <ul class="hidden md:flex gap-8">
+        <li><a href="index.html" class="nav-link hover:text-[#D2691E] transition">Home</a></li>
+        <li><a href="menu.html" class="nav-link hover:text-[#D2691E] transition">Menu</a></li>
+        <li><a href="about.html" class="nav-link hover:text-[#D2691E] transition">About</a></li>
+        <li><a href="contact.html" class="nav-link hover:text-[#D2691E] transition">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-[#F5E6D3] text-2xl" id="mobile-menu-btn">☰</button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#8B4513] px-4 py-4">
+      <ul class="flex flex-col gap-4">
+        <li><a href="index.html" class="nav-link block hover:text-[#D2691E] transition">Home</a></li>
+        <li><a href="menu.html" class="nav-link block hover:text-[#D2691E] transition">Menu</a></li>
+        <li><a href="about.html" class="nav-link block hover:text-[#D2691E] transition">About</a></li>
+        <li><a href="contact.html" class="nav-link block hover:text-[#D2691E] transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative w-full h-screen md:h-96 overflow-hidden bg-gray-900">
+    <div class="hero-img absolute inset-0">
+      <img src="images/hero.jpg" class="w-full h-full object-cover" alt="Mem's Kitchen" loading="eager">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+    <div class="hero-content relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold text-[#F5E6D3] mb-4">Welcome to Mem's Kitchen</h1>
+      <p class="text-lg md:text-2xl text-[#F5E6D3] mb-8 max-w-2xl">Where every meal is made with love and served with the warmth of family tradition</p>
+      <a href="contact.html" class="bg-[#D2691E] hover:bg-[#A0522D] text-[#F5E6D3] font-bold py-3 px-8 rounded-lg transition text-lg">Book Your Table Today</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16">
+
+    <!-- Feature Cards Section -->
+    <section class="animate-section mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-[#8B4513] text-center mb-12">Why Choose Mem's Kitchen?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Dine-in Restaurant -->
+        <div class="bg-[#F5E6D3] p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold text-[#8B4513] mb-4">Dine-in Restaurant</h3>
+          <p class="text-gray-700">Experience the warmth and hospitality of our restaurant, where every corner tells a story of tradition and care.</p>
+        </div>
+
+        <!-- Card 2: Traditional Home Cooking -->
+        <div class="bg-[#F5E6D3] p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold text-[#8B4513] mb-4">Traditional Home Cooking</h3>
+          <p class="text-gray-700">Authentic family recipes passed down through generations, prepared fresh daily with the finest ingredients.</p>
+        </div>
+
+        <!-- Card 3: Family-Style Meals -->
+        <div class="bg-[#F5E6D3] p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold text-[#8B4513] mb-4">Family-Style Meals</h3>
+          <p class="text-gray-700">Perfect for gatherings, our family-style service brings people together around exceptional food and shared memories.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="animate-section py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold text-[#8B4513] mb-6">About Mem's Kitchen</h2>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            At Mem's Kitchen, we believe that food is more than just sustenance—it's a celebration of love, tradition, and community. Our restaurant stands as a beacon of warmth in the heart of Wickford, serving authentic, home-style cooking that touches the soul.
+          </p>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Every dish is crafted with the same care and passion that Mem brought to her kitchen generations ago. We use fresh, quality ingredients and time-honored recipes to create meals that feel like coming home.
+          </p>
+          <a href="about.html" class="inline-block bg-[#8B4513] hover:bg-[#6B3410] text-[#F5E6D3] font-bold py-3 px-8 rounded-lg transition">Learn More About Us</a>
+        </div>
+        <div>
+          <img src="images/section.jpg" class="w-full h-64 object-cover rounded-lg shadow-lg" alt="restaurant" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#8B4513] text-[#F5E6D3] py-12 mt-20">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Footer Column 1: About -->
+        <div>
+          <h3 class="text-2xl font-bold font-['Playfair_Display'] mb-4">Mem's Kitchen</h3>
+          <p class="text-sm">Homemade Flavors, Heartfelt Service. A beloved local restaurant serving authentic, home-style cooking in the heart of Wickford.</p>
+        </div>
+
+        <!-- Footer Column 2: Contact Info -->
+        <div>
+          <h4 class="text-lg font-bold mb-4">Visit Us</h4>
+          <p class="text-sm mb-2">40 High St</p>
+          <p class="text-sm mb-4">Wickford SS12 9AT</p>
+          <p class="text-sm">United Kingdom</p>
+        </div>
+
+        <!-- Footer Column 3: Navigation -->
+        <div>
+          <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="index.html" class="hover:text-[#D2691E] transition">Home</a></li>
+            <li><a href="menu.html" class="hover:text-[#D2691E] transition">Menu</a></li>
+            <li><a href="about.html" class="hover:text-[#D2691E] transition">About</a></li>
+            <li><a href="contact.html" class="hover:text-[#D2691E] transition">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="border-t border-[#D2691E] mt-8 pt-8 text-center text-sm">
+        <p>&copy; 2024 Mem's Kitchen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+    gsap.from(".hero-img", { opacity: 0, duration: 1.2, ease: "power1.out" });
+    gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+    gsap.utils.toArray(".animate-section").forEach(el => {
+      gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+    });
+  </script>
+
+</body>
+</html>
+```
