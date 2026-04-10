@@ -1,0 +1,208 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Mem's Kitchen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5E6D3] text-gray-800 font-['Open_Sans']">
+  <!-- Header & Navigation -->
+  <header class="bg-[#8B4513] text-[#F5E6D3] py-4 sticky top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div class="font-['Playfair_Display'] text-2xl sm:text-3xl font-bold">
+        <a href="index.html">Mem's Kitchen</a>
+      </div>
+      <nav class="hidden md:flex gap-8">
+        <a href="index.html" class="nav-link hover:text-[#D2691E] transition">Home</a>
+        <a href="menu.html" class="nav-link hover:text-[#D2691E] transition">Menu</a>
+        <a href="about.html" class="nav-link hover:text-[#D2691E] transition">About</a>
+        <a href="contact.html" class="nav-link hover:text-[#D2691E] transition">Contact</a>
+      </nav>
+      <button class="md:hidden text-[#F5E6D3]" id="menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-[#8B4513] px-4 py-4 flex flex-col gap-4">
+      <a href="index.html" class="nav-link text-[#F5E6D3] hover:text-[#D2691E] transition">Home</a>
+      <a href="menu.html" class="nav-link text-[#F5E6D3] hover:text-[#D2691E] transition">Menu</a>
+      <a href="about.html" class="nav-link text-[#F5E6D3] hover:text-[#D2691E] transition">About</a>
+      <a href="contact.html" class="nav-link text-[#F5E6D3] hover:text-[#D2691E] transition">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-[#8B4513] text-[#F5E6D3] py-16 sm:py-20 md:py-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="hero-content">
+          <h1 class="font-['Playfair_Display'] text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Get In Touch</h1>
+          <p class="text-lg sm:text-xl">We'd love to hear from you. Reach out with any questions or feedback about your experience at Mem's Kitchen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="animate-section py-16 sm:py-20 md:py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+          <!-- Contact Form -->
+          <div>
+            <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8">Send us a Message</h2>
+            <form class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513] focus:border-transparent"
+                  placeholder="John Doe"
+                >
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513] focus:border-transparent"
+                  placeholder="john@example.com"
+                >
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  required 
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513] focus:border-transparent"
+                  placeholder="Tell us what's on your mind..."
+                ></textarea>
+              </div>
+              <button 
+                type="submit" 
+                class="w-full bg-[#8B4513] text-[#F5E6D3] font-semibold py-3 rounded-lg hover:bg-[#D2691E] transition duration-300"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div>
+            <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8">Contact Information</h2>
+            <div class="space-y-8">
+              <!-- Address -->
+              <div>
+                <h3 class="font-semibold text-lg text-[#8B4513] mb-2">Our Location</h3>
+                <p class="text-gray-700 leading-relaxed">
+                  40, 40 High St<br>
+                  Wickford SS12 9AT<br>
+                  United Kingdom
+                </p>
+              </div>
+
+              <!-- Business Hours -->
+              <div>
+                <h3 class="font-semibold text-lg text-[#8B4513] mb-2">Business Hours</h3>
+                <div class="text-gray-700 space-y-1">
+                  <p><span class="font-semibold">Monday - Friday:</span> 9:00 AM - 5:00 PM</p>
+                  <p><span class="font-semibold">Saturday:</span> 10:00 AM - 6:00 PM</p>
+                  <p><span class="font-semibold">Sunday:</span> 10:00 AM - 4:00 PM</p>
+                </div>
+              </div>
+
+              <!-- About the Restaurant -->
+              <div>
+                <h3 class="font-semibold text-lg text-[#8B4513] mb-2">About Mem's Kitchen</h3>
+                <p class="text-gray-700 leading-relaxed">
+                  A beloved local restaurant in Wickford serving authentic, home-style cooking with fresh ingredients and traditional recipes passed down through generations. Experience homemade flavors with heartfelt service in the heart of our community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="animate-section py-16 sm:py-20 md:py-24 bg-[#F5E6D3]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-12 text-center">Find Us</h2>
+        <div class="rounded-lg overflow-hidden shadow-lg h-96">
+          <iframe 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            style="border:0" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.1234567890123!2d0.739!3d51.596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a1234567890%3A0x1234567890abcdef!2s40%20High%20St%2C%20Wickford%20SS12%209AT!5e0!3m2!1sen!2suk!4v1234567890123" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#8B4513] text-[#F5E6D3] py-12 sm:py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="font-['Playfair_Display'] text-2xl font-bold mb-4">Mem's Kitchen</h3>
+          <p class="text-sm">Homemade Flavors, Heartfelt Service</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-[#D2691E] transition">Home</a></li>
+            <li><a href="menu.html" class="hover:text-[#D2691E] transition">Menu</a></li>
+            <li><a href="about.html" class="hover:text-[#D2691E] transition">About</a></li>
+            <li><a href="contact.html" class="hover:text-[#D2691E] transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Get In Touch</h4>
+          <p class="text-sm">40, 40 High St<br>Wickford SS12 9AT<br>United Kingdom</p>
+        </div>
+      </div>
+      <div class="border-t border-[#D2691E] pt-8 text-center text-sm">
+        <p>&copy; 2024 Mem's Kitchen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- GSAP Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+    gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+    gsap.utils.toArray(".animate-section").forEach(el => {
+      gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+    });
+  </script>
+</body>
+</html>
+```
