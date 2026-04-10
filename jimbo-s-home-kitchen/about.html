@@ -1,0 +1,202 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jimbo's Home Kitchen | Comfort Food Made with Love</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-['Open_Sans'] bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#8B4513] shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-[#F4E4BC] font-['Playfair_Display'] text-2xl font-bold">Jimbo's</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-[#F4E4BC] hover:text-[#D2691E] transition">Home</a>
+                    <a href="menu.html" class="nav-link text-[#F4E4BC] hover:text-[#D2691E] transition">Menu</a>
+                    <a href="about.html" class="nav-link text-[#D2691E] font-semibold">About</a>
+                    <a href="contact.html" class="nav-link text-[#F4E4BC] hover:text-[#D2691E] transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-[#F4E4BC] hover:text-[#D2691E]" onclick="toggleMenu()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="nav-link block text-[#F4E4BC] hover:text-[#D2691E] py-2">Home</a>
+                <a href="menu.html" class="nav-link block text-[#F4E4BC] hover:text-[#D2691E] py-2">Menu</a>
+                <a href="about.html" class="nav-link block text-[#D2691E] font-semibold py-2">About</a>
+                <a href="contact.html" class="nav-link block text-[#F4E4BC] hover:text-[#D2691E] py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-[#8B4513] text-[#F4E4BC] h-96 flex items-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/hero.jpg" class="hero-img w-full h-full object-cover" alt="Jimbo's Home Kitchen" loading="eager">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+        </div>
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="hero-content">
+                <h1 class="font-['Playfair_Display'] text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">About Jimbo's</h1>
+                <p class="text-lg sm:text-xl text-[#F4E4BC]">Our Story of Love, Care & Home Cooking</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- About Section -->
+        <section class="animate-section mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-6">About Jimbo's Home Kitchen</h2>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        At Jimbo's Home Kitchen, we believe the best meals are made with love, care, and the finest ingredients. Located in the heart of Wickford, we've been serving our community with traditional home-style cooking that brings families together around the table.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Every dish that leaves our kitchen carries the warmth and comfort of home. We use only fresh, quality ingredients sourced from trusted local suppliers, ensuring that every bite tastes like it came from a grandma's kitchen—because it's made with that same dedication and love.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/about.jpg" class="w-full h-80 object-cover rounded-lg shadow-lg" alt="About Jimbo's Home Kitchen" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values Section -->
+        <section class="animate-section mb-16 bg-[#F4E4BC] rounded-lg p-8 sm:p-12">
+            <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8 text-center">Our Mission & Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-[#8B4513] text-[#F4E4BC] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513] mb-2">Quality First</h3>
+                    <p class="text-gray-700">We never compromise on the quality of ingredients or the care we put into every meal.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-[#8B4513] text-[#F4E4BC] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513] mb-2">Community</h3>
+                    <p class="text-gray-700">We're more than a restaurant—we're a gathering place where families and friends create memories together.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-[#8B4513] text-[#F4E4BC] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 3.062v6.072A3.066 3.066 0 0117.853 17H2.147A3.066 3.066 0 010 13.789v-6.072a3.066 3.066 0 012.812-3.062zM9 13a1 1 0 100-2 1 1 0 000 2zm0-4a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-xl font-bold text-[#8B4513] mb-2">Passion</h3>
+                    <p class="text-gray-700">Every recipe, every technique, every plate is prepared with genuine passion for the craft of cooking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="animate-section mb-16">
+            <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-[#8B4513] mb-8 text-center">Meet the Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-bold text-[#8B4513] mb-3">Jimbo</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        Jimbo is the heart and soul of Jimbo's Home Kitchen. With over 20 years of culinary passion and a deep love for authentic home cooking, he founded this restaurant with a simple mission: to serve meals that feel like they're made by family.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Drawing inspiration from cherished family recipes and a commitment to local, quality ingredients, Jimbo brings warmth and hospitality to every dish that leaves the kitchen. His belief is simple—good food shared with good people is the best medicine.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/section.jpg" class="w-full h-64 object-cover rounded-lg shadow-lg" alt="restaurant" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Offer Section -->
+        <section class="animate-section bg-[#8B4513] text-[#F4E4BC] rounded-lg p-8 sm:p-12">
+            <h2 class="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold mb-8 text-center">What We Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#A0522D] rounded-lg p-6">
+                    <h3 class="font-['Playfair_Display'] text-xl font-bold mb-3">Dine-in Service</h3>
+                    <p class="text-[#F4E4BC]">Experience the warmth of our cozy dining room, where every meal is served with genuine hospitality and care.</p>
+                </div>
+                <div class="bg-[#A0522D] rounded-lg p-6">
+                    <h3 class="font-['Playfair_Display'] text-xl font-bold mb-3">Family-Style Meals</h3>
+                    <p class="text-[#F4E4BC]">Bring your family together with our hearty family-style portions, perfect for sharing and creating memories.</p>
+                </div>
+                <div class="bg-[#A0522D] rounded-lg p-6">
+                    <h3 class="font-['Playfair_Display'] text-xl font-bold mb-3">Daily Specials</h3>
+                    <p class="text-[#F4E4BC]">Check in regularly for our rotating daily specials—seasonal favorites and chef's recommendations made fresh each day.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#8B4513] text-[#F4E4BC] py-12 mt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-['Playfair_Display'] text-xl font-bold mb-4">Jimbo's Home Kitchen</h3>
+                    <p class="text-[#F4E4BC]">Comfort Food Made with Love</p>
+                </div>
+                <div>
+                    <h3 class="font-['Playfair_Display'] text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#D2691E] transition">Home</a></li>
+                        <li><a href="menu.html" class="hover:text-[#D2691E] transition">Menu</a></li>
+                        <li><a href="about.html" class="hover:text-[#D2691E] transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-[#D2691E] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-['Playfair_Display'] text-lg font-bold mb-4">Visit Us</h3>
+                    <p class="text-[#F4E4BC]">1, Wickford SS12 9AJ</p>
+                    <p class="text-[#F4E4BC]">United Kingdom</p>
+                </div>
+            </div>
+            <div class="border-t border-[#D2691E] pt-8 text-center">
+                <p class="text-[#F4E4BC]">&copy; 2024 Jimbo's Home Kitchen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- GSAP Animations -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".hero-content", { opacity: 0, y: 30, duration: 0.9, ease: "power2.out" });
+        gsap.from(".hero-img", { opacity: 0, duration: 1.2, ease: "power1.out" });
+        gsap.from(".nav-link", { opacity: 0, y: -10, duration: 0.4, stagger: 0.08, delay: 0.3 });
+        gsap.utils.toArray(".animate-section").forEach(el => {
+            gsap.from(el, { opacity: 0, y: 40, duration: 0.7, scrollTrigger: { trigger: el, start: "top 85%" } });
+        });
+    </script>
+
+    <!-- Mobile Menu Toggle -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
+```
